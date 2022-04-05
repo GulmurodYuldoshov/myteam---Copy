@@ -1,0 +1,140 @@
+/* header */
+.header {
+    padding-top: 73px;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 80px;
+    transition: 0.5s aes;
+}
+.logo__img{
+    width: 160px;
+    height: 40px;
+}
+.logo:hover{
+    opacity: 0.6;
+}
+ .nav {
+    margin-right: auto;
+   
+}
+
+.nav__list {
+    display: flex;
+    
+}
+
+.nav__link {
+    margin-right: 40px;
+    color: var(--main-white);
+    transition: 0.5s aes;
+}
+.nav__link:hover{
+    opacity: 0.5;
+}
+.contact__link {
+    color: var(--main-white);
+    transition: 0.5s aes;
+   
+}
+.contact__link:hover{
+    background-color: var(--main-white);
+     border: 2px solid var(--main-white);
+     color: #002529;
+}
+
+.header__btn{
+    display: none;
+    margin-left: auto;
+    width: 50px;
+    height: 32px;
+    background-color: transparent;
+    border: none;
+}
+.toggle__line{
+    display: inline-block;
+    width: 20px;
+    height: 3px;
+    background-color: var(--main-white);
+    position: relative;
+    z-index: 1;
+}
+.toggle__line::before{
+    display: inline-block;
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 8px;
+    left: 0;
+    width: 20px;
+    height: 3px;
+    background-color: var(--main-white); 
+}
+.toggle__line::after{
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    top: -8px;
+    left: 0;
+    content: "";
+    width: 20px;
+    height: 3px;
+    background-color: var(--main-white); 
+}
+
+
+/* media  */
+@media (max-width :768px) {
+    .logo{
+        margin-right: 48px;
+    }
+    .logo__img{
+        width: 128px;
+        height: 32px;
+    }
+}
+@media (max-width :576px) {
+   .nav{
+       position: fixed;
+       z-index: 1 ;
+       right: 0;
+       top: 0;
+       width: 70%;
+       height: 100vh;
+       background-color: var( --second-police-blue);
+   }
+   .nav__list{
+       margin-top: 112px;
+      flex-direction: column;
+      margin-left: 48px;
+   }
+   .nav__link{
+       margin-bottom: 24px;
+   }
+   
+   .header__btn{
+       display: block;
+   }
+   .toggle-close .toggle__line::after{
+       display: none;
+   }
+   .toggle-close .toggle__line{
+    transform: rotate(45deg);
+    }
+    .toggle-close .toggle__line::before{
+        transform: rotate(-90deg);
+        margin-top: -8px;
+    }
+    .nav-open{
+        display: block;
+    }
+}
+
+
+
+

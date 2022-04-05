@@ -1,0 +1,26 @@
+.largest_text{
+    font-size: 100px;
+    line-height: 100px;
+}
+.large-text{
+    font-size: 64px;
+    line-height: 56px;
+}
+.semi-text{
+  font-size: 48px;
+  line-height: 48px;
+}
+.medium-text{
+    font-size: 18px;
+    line-height: 18px;
+}
+.regular-text{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+}
+.light-text{
+    font-weight: 600;
+    line-height: 25px;
+    font-size: 15px;
+}

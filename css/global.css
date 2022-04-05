@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: local(''),
+         url('../fonts/livvic-v11-latin-600.woff2') format('woff2'), 
+         url('../fonts/livvic-v11-latin-600.woff') format('woff'); 
+  }
+  @font-face {
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local(''),
+         url('../fonts/livvic-v11-latin-700.woff2') format('woff2'), 
+         url('../fonts/livvic-v11-latin-700.woff') format('woff');
+  }
+  
+  html {
+      box-sizing: border-box;
+    }
+    
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+  }
+    
+  img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+  }
+    
+  body {
+      padding: 0;
+      margin: 0;
+      font-family: 'Livvic' , sans-serif;
+      line-height: 1.5;
+      background-color: var(--main-green);
+     
+  }
+    
+  ul {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+  }
+    
+  a {
+      display: inline-block;
+      text-decoration: none;
+  }
+  .visually-hidden{
+      position: absolute;
+      z-index: 1;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      border: 0;
+      padding: 0;
+      clip: rect(0 0 0 0);
+  }
+  .container {
+      max-width: 1150px;
+      padding: 0 20px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .contact__link {
+      padding: 9px 33px 11px 32px;
+      border: 2px solid #fff;
+      border-radius: 24px;
+  }
+  
